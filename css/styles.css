@@ -1,0 +1,40 @@
+/** {
+    box-sizing: border-box;
+    border: 1px solid red !important;
+}*/
+.container {
+    margin-top: 2%;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.logo {
+    background: url("../images/udacity_logo.svg") no-repeat;
+    background-size: contain;
+    margin: 1em 0 0 1em;
+
+}
+
+@media screen and (max-width: 767px) {
+    .splash {
+        display: none;
+    }
+    .featured-work {
+        box-sizing: border-box;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        display: none;
+    }
+    .name-col {
+        margin: auto;
+    }
+    .name {
+        text-align: center;
+    }
+}
