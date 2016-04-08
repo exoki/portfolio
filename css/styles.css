@@ -1,7 +1,3 @@
-/** {
-    box-sizing: border-box;
-    border: 1px solid red !important;
-}*/
 h1, h2, h3, h4 {
     font-family: 'Sanchez', serif;
 }
@@ -12,10 +8,6 @@ h3 {
 
 span {
     color: rgb(249, 38, 114);
-}
-
-.container {
-    margin: 2% auto;
 }
 
 .flex-row {
@@ -38,6 +30,8 @@ span {
 
 .splash {
     position: relative;
+    padding: 0 1.2em;
+    width: 100%;
 }
 
 .splash-text {
@@ -52,7 +46,7 @@ span {
 }
 
 .type {
-    width: 3.85em;
+    width: 4em;
     overflow: hidden;
     white-space:nowrap;
     border-right: 0.1em solid black;
@@ -62,12 +56,12 @@ span {
 
 @-webkit-keyframes typing {
     from { width: 0 }
-    to { width:3.85em }
+    to { width: 4em }
 }
 
 @keyframes typing {
     from { width: 0 }
-    to { width:3.85em }
+    to { width: 4em }
 }
 
 @-webkit-keyframes blink-caret {
@@ -82,7 +76,7 @@ span {
 
 .featured-work {
     border-radius: 3px;
-    padding: 1.5em;
+    padding: 1.2em;
     border: 1px solid #ddd;
     box-shadow: 0 0 5px #eee;
     box-sizing: border-box;
@@ -102,13 +96,29 @@ footer {
     margin-top: 1em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
+    .col-feat {
+        margin-top: 1.2em;
+    }
+
+    .col-feat:first-child, .col-feat:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
     .splash {
         display: none;
     }
-    .featured-work {
-        box-sizing: border-box;
-        margin: 10px;
+
+    .col-feat, .col-feat:nth-child(2) {
+        margin-top: 1.2em;
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .flex-row {
+        justify-content: center;
     }
 }
 
