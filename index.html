@@ -7,15 +7,30 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="script/script.js"></script>
   <title>Esmond Kan | Portfolio</title>
 </head>
-<body>
+<body onresize="checkMedia();">
+    <div class="container-fluid">
+        <div class="container">
+            <nav>
+                <ul id="menu" class="flex-row flex-wrap">
+                    <li><a href="#"><i class="fa fa-comment"></i>about</a></li>
+                    <li><a href="#"><i class="fa fa-paint-brush"></i>portfolio</a></li>
+                    <li><a href="#"><i class="fa fa-code"></i>resume</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>contact</a></li>
+                </ul>
+                <div class="nav-button" onclick="menuToggle();"><i class="fa fa-bars"></i></div>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="row flex-row">
             <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 logo">
                 <!--Logo Div !-->
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 name-col">
+            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9">
                 <div class="text-right name">
                     <h1 class="text-uppercase">Esmond Kan</h1>
                     <h3>Front End Developer</h3>
