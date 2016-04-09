@@ -9,7 +9,7 @@ var menuState = false;
     else {
         menu.style['transition'] = 'max-height 0.5s ease-in-out';
         menu.style.maxHeight = "500px";
-
+    }
     menuState = !menuState;
   }
 
