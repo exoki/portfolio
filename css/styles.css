@@ -58,6 +58,7 @@ span {
 .nav-button {
     display: none;
     padding: 0.5em 0;
+    cursor: pointer;
 }
 
 .container-fluid {
@@ -191,14 +192,16 @@ footer {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
     li {
         width: 100%;
     }
     .nav-button {
+        /* Show hamburger button */
         display: block;
     }
     #menu {
+        /* Hide menu items */
         max-height: 0;
     }
 }

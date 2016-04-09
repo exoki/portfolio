@@ -12,17 +12,20 @@
   <title>Esmond Kan | Portfolio</title>
 </head>
 <body onresize="checkMedia();">
+    <!-- Navigation Menu !-->
     <div class="container-fluid">
         <div class="container">
+
             <nav>
                 <ul id="menu" class="flex-row flex-wrap">
                     <li><a href="#"><i class="fa fa-comment"></i>about</a></li>
                     <li><a href="#"><i class="fa fa-paint-brush"></i>portfolio</a></li>
                     <li><a href="#"><i class="fa fa-code"></i>resume</a></li>
-                    <li><a href="#"><i class="fa fa-envelope"></i>contact</a></li>
+                    <li><a href="#contact" data-toggle="modal" data-target="#contact"><i class="fa fa-envelope"></i>contact</a></li>
                 </ul>
                 <div class="nav-button" onclick="menuToggle();"><i class="fa fa-bars"></i></div>
             </nav>
+
         </div>
     </div>
 
@@ -40,6 +43,7 @@
         </div>
         <hr>
 
+        <!-- Splash Image !-->
         <div class="row">
             <div class="splash">
                 <div class="splash-text">
@@ -53,6 +57,7 @@
             </div>
         </div>
 
+        <!-- Featured Work !-->
         <h2>Featured Work.</h2>
         <div class="row row-feat flex-row flex-wrap">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-feat flex-row">
@@ -66,25 +71,26 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-feat flex-row">
                 <div class="featured-work">
-                <picture>
-                    <img src="images/map.png" class="img-responsive" alt="a map with a location pointer">
-                </picture>
-                <h3>Neighbourhood Map Project</h3>
-                <a href="https://github.com/udacity/NeighbourMap/">https://github.com/udacity/NeighbourMap/</a>
+                    <picture>
+                        <img src="images/map.png" class="img-responsive" alt="a map with a location pointer">
+                    </picture>
+                    <h3>Neighbourhood Map Project</h3>
+                    <a href="https://github.com/udacity/NeighbourMap/">https://github.com/udacity/NeighbourMap/</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-feat flex-row">
                 <div class="featured-work">
-                <picture>
-                    <img src="images/health.png" class="img-responsive" alt="a heart cardiogram illustration">
-                </picture>
-                <h3>Health Tracker</h3>
-                <a href="https://github.com/udacity/HealthTrack/">https://github.com/udacity/HealthTrack/</a>
+                    <picture>
+                        <img src="images/health.png" class="img-responsive" alt="a heart cardiogram illustration">
+                    </picture>
+                    <h3>Health Tracker</h3>
+                    <a href="https://github.com/udacity/HealthTrack/">https://github.com/udacity/HealthTrack/</a>
                 </div>
             </div>
         </div>
 
-        <footer>
+        <!-- Footer !-->
+        <footer class="text-center">
             © 2016 Esmond Kan
         </footer>
     </div>
