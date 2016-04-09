@@ -13,11 +13,11 @@
 </head>
 <body onresize="checkMedia();">
     <!-- Navigation Menu !-->
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="container">
 
             <nav>
-                <ul id="menu" class="flex-row flex-wrap">
+                <ul id="menu" class="flex-row flex-wrap nav-menu">
                     <li><a href="#"><i class="fa fa-comment"></i>about</a></li>
                     <li><a href="#"><i class="fa fa-paint-brush"></i>portfolio</a></li>
                     <li><a href="#"><i class="fa fa-code"></i>resume</a></li>
@@ -27,24 +27,26 @@
             </nav>
 
         </div>
-    </div>
+    </section>
 
     <div class="container">
-        <div class="row flex-row">
+
+        <header class="row flex-row flex-wrap">
             <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 logo">
-                <!--Logo Div !-->
+                <img src="images/udacity_logo.svg" alt="Udacity logo">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9">
+            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 col-name">
                 <div class="text-right name">
                     <h1 class="text-uppercase">Esmond Kan</h1>
                     <h3>Front End Developer</h3>
                 </div>
             </div>
-        </div>
+        </header>
+
         <hr>
 
         <!-- Splash Image !-->
-        <div class="row">
+        <section class="row">
             <div class="splash">
                 <div class="splash-text">
                     <h2 >&lt;!<span>DOCTYPE</span> html&gt;</h2>
@@ -55,11 +57,11 @@
                     <img src="images/splash.svg" alt="a computer, notepad and mobile phone">
                 </picture>
             </div>
-        </div>
+        </section>
 
         <!-- Featured Work !-->
         <h2>Featured Work.</h2>
-        <div class="row row-feat flex-row flex-wrap">
+        <section class="row row-feat flex-row flex-wrap">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-feat flex-row">
                 <div class="featured-work">
                     <picture>
@@ -87,11 +89,13 @@
                     <a href="https://github.com/udacity/HealthTrack/">https://github.com/udacity/HealthTrack/</a>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer !-->
-        <footer class="text-center">
-            © 2016 Esmond Kan
+        <footer class="row">
+            <div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                © 2016 Esmond Kan
+            </div>
         </footer>
     </div>
 </body>

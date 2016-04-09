@@ -2,11 +2,15 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Sanchez', serif;
+    font-family: "Sanchez", serif;
 }
 
 h3 {
     color: #039dc7;
+}
+
+header {
+    align-items: center;
 }
 
 /* Navigation Menu */
@@ -35,7 +39,7 @@ nav a,
 nav a:link,
 nav a:visited,
 .nav-button {
-    font: 1.4em 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    font: 1.4em "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
     color: #fff;
     text-shadow: 1px 1px 0px #283744;
     text-decoration: none;
@@ -46,7 +50,7 @@ span {
     color: #f92672;
 }
 
-#menu {
+.nav-menu {
     overflow: hidden;
     max-height: 500px;
 }
@@ -84,10 +88,10 @@ span {
 
 /* Content */
 
-.logo {
-    background: url(../images/udacity_logo.svg) no-repeat;
-    background-size: contain;
-    margin: 1em 0 0 1em;
+.logo img {
+    margin-top: 1em;
+    max-width: 100%;
+    max-height: 100px;
 }
 
 .splash {
@@ -117,7 +121,7 @@ span {
 
 .featured-work:hover {
     border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: 0px 0px 8px rgba(82, 168, 236, 0.6);
+    box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
 .featured-work img {
@@ -159,7 +163,7 @@ span {
 /* Footer */
 
 footer {
-    margin-top: 1em;
+    margin: 1em;
 }
 
 /* Media Queries */
@@ -175,8 +179,12 @@ footer {
 }
 
 @media screen and (max-width: 670px) {
-    .splash {
-        display: none;
+    .splash-text {
+        margin: 1em 0 0 1em;
+    }
+
+    .splash h2 {
+        font-size: 1.2em;
     }
 
     .col-feat, .col-feat:nth-child(2) {
@@ -187,7 +195,7 @@ footer {
 
     .flex-row {
         -webkit-justify-content: center;
-            -ms-flex-pack: center;
+                  -ms-flex-pack: center;
                 justify-content: center;
     }
 }
@@ -196,20 +204,40 @@ footer {
     li {
         width: 100%;
     }
+
     .nav-button {
         /* Show hamburger button */
         display: block;
     }
-    #menu {
+
+    .nav-menu {
         /* Hide menu items */
         max-height: 0;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .logo {
-        display: none;
+    .splash h2 {
+        font-size: 1em;
     }
+
+    .splash-text {
+        margin: 0.5em 0 0 0.5em;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 64px;
+    }
+
+    .col-name {
+        width: 100%;
+    }
+
     .name {
         text-align: center;
     }
