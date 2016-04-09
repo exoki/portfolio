@@ -9,7 +9,7 @@ var menuState = false;
     else {
         menu.style['transition'] = 'max-height 0.5s ease-in-out';
         menu.style.maxHeight = "500px";
-    }
+
     menuState = !menuState;
   }
 
@@ -17,8 +17,5 @@ var menuState = false;
     var mq = window.matchMedia("(min-width: 641px");
     var menu = document.getElementById("menu");
 
-    if (mq.matches)
-        menu.style.maxHeight = "500px";
-    else
-        menu.style.maxHeight = "0";
+    mq.matches ? menu.style.maxHeight = "500px" : menu.style.maxHeight = "0";
   }
