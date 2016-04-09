@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="script/script.js"></script>
-  <title>Esmond Kan | Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+    <title>Esmond Kan | Portfolio</title>
 </head>
 <body onresize="checkMedia();">
+    <!-- Modal !-->
+    <section id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal Content !-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title"><i class="fa fa-comment"></i>Let's Chat!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Job opportunities? Potential projects we can work on? Kick-ass video games I shouldn't miss?</p>
+                    <p>Great! I would love to discuss with you in further detail.</p>
+                    <p>You can always reach me at:</p>
+                    <h4><a href="mailto:contact@esmondkan.com"><i class="fa fa-envelope"></i>contact@esmondkan.com</a></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Navigation Menu !-->
     <section class="container-fluid">
         <div class="container">
 
             <nav>
                 <ul id="menu" class="flex-row flex-wrap nav-menu">
-                    <li><a href="#"><i class="fa fa-comment"></i>about</a></li>
+                    <li><a href="#"><i class="fa fa-hashtag"></i>about</a></li>
                     <li><a href="#"><i class="fa fa-paint-brush"></i>portfolio</a></li>
                     <li><a href="#"><i class="fa fa-code"></i>resume</a></li>
-                    <li><a href="#contact" data-toggle="modal" data-target="#contact"><i class="fa fa-envelope"></i>contact</a></li>
+                    <li><a href="#contactModal" data-toggle="modal" data-target="#contactModal"><i class="fa fa-envelope"></i>contact</a></li>
                 </ul>
                 <div class="nav-button" onclick="menuToggle();"><i class="fa fa-bars"></i></div>
             </nav>
