@@ -139,6 +139,7 @@ span {
     border: 1px solid #ddd;
     box-shadow: 0 0 5px #eee;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .featured-work:hover {
